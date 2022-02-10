@@ -140,8 +140,8 @@ h1{
 
 .form-checkbox{
     position: absolute;
-    left: 60px;
-    top: 520px;
+    left: 75px;
+    top: 540px;
 
     font-family: Nunito;
     font-style: normal;
@@ -156,6 +156,48 @@ h1{
     margin: 0px 8px;
 }
 
+/*modificação do checkbox*/
+.form-checkbox input{
+    position: absolute;
+    opacity: 0;
+}
+
+.check{
+    left: -20px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background: #ccc;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.795);
+}
+
+.form-checkbox input:checked ~ .check{
+    background-color: #0DBDBD;
+}
+
+.form-checkbox .check::after{
+    left: 5px;
+    width: 3px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.check::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-checkbox input:checked ~ .check::after{
+    display: block;
+}
+
 button{
     display: flex;
     flex-direction: row;
@@ -163,13 +205,20 @@ button{
     align-items: center;
     padding: 0px 12px;
 
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+
     position: absolute;
     height: 40px;
     left: 450px;
-    top: 520px;
-    color: white;
+    top: 540px;
     background: #0DBDBD;
-    border-color:#0DBDBD ;
+    border: none;
     border-radius: 10px;
     cursor: pointer; /*trocar pela mãozinha*/
 }
+
