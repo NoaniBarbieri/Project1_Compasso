@@ -10,9 +10,9 @@ body{
     display: flex;
     position: absolute;
     width: 620px;
-    height: 590px;
+    height: 636px;
     left: auto;
-    top: 40px;
+    top: 20px;
     background: #FFFFFF;
     border-radius: 20px;
     flex-flow: column wrap;
