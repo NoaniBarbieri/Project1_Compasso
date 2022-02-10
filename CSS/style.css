@@ -11,8 +11,9 @@ body{
     position: absolute;
     width: 620px;
     height: 636px;
-    left: auto;
-    top: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     background: #FFFFFF;
     border-radius: 20px;
     flex-flow: column wrap;
@@ -171,7 +172,7 @@ h1{
     background: #ccc;
     position: absolute;
     border-radius: 3px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.795);
+    box-shadow: 0 3px 6px #888;
 }
 
 .form-checkbox input:checked ~ .check{
