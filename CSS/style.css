@@ -51,6 +51,7 @@ h1{
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
+    margin-left: 5px;
     
     /* identical to box height, or 114% */
 
@@ -74,6 +75,7 @@ h1{
     border: 2px solid #AAAAAA;
     box-sizing: border-box;
     border-radius: 4px;
+    color: #767676;
 }
 
 #formPhone, #form-Birthday{
@@ -86,6 +88,7 @@ h1{
     border: 2px solid #AAAAAA;
     box-sizing: border-box;
     border-radius: 4px;
+    color: #767676;
 }
 
 #form-Email, #form-Password{
@@ -98,6 +101,7 @@ h1{
     border: 2px solid #AAAAAA;
     box-sizing: border-box;
     border-radius: 4px;
+    color: #767676;
 }
 
 #form-FullName::placeholder, #form-Email::placeholder, #formPhone::placeholder{
@@ -112,31 +116,31 @@ h1{
 
 .form-name{
     position: absolute;
-    left: 60px;
+    left: 45px;
     right: 0px;
     top: 250px;
 }
 .form-email{
     position: absolute;
-    left: 60px;
+    left: 45px;
     top: 340px;
 }
 
 .form-phone{
     position: absolute;
-    left: 390px;
+    left: 375px;
     top: 340px;
 }
 
 .form-password{
     position: absolute;
-    left: 60px;
+    left: 45px;
     top: 430px;
 }
 
 .form-birthday{
     position: absolute;
-    left: 390px;
+    left: 375px;
     top: 430px;
 }
 
@@ -224,3 +228,22 @@ button{
     cursor: pointer; /*trocar pela mãozinha*/
 }
 
+p{
+    margin-left: 5px;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1px;
+    color: red;
+}
+
+#visiblity-toggle{
+    position: absolute;
+    color: grey;
+    cursor: pointer;
+    margin-left:-30px;
+    margin-top: 9px;
+    font-size: 18px;
+}

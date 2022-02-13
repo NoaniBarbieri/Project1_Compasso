@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intern Sing Up</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
@@ -22,32 +23,42 @@
             <section class="form-name">
                 <label for="form-FullName">Full Name *</label>
                 <input type="text" name="FullName" id="form-FullName" placeholder="Name" >
+                <p id="name-error">FullName Invalid</p>
             </section>
 
             <section class="form-email">
                 <label for="form-Email">Email *</label>
                 <input type="email" name="Email" id="form-Email" placeholder="foo@bar.com" >
+                <p id="email-error">Email Invalid</p>
             </section>
 
             <section class="form-phone">
                 <label for="formPhone">Phone</label>
                 <input type="tel" name="Phone" id="formPhone" placeholder="(83) 00000-0000">
+                <p id="phone-error">Phone Invalid</p>
             </section>
 
             <section class="form-password">
                 <label for="form-Password">Password *</label>
+                
                 <input type="password" name="Password" id="form-Password" >
+                <span class="material-icons-outlined" id="visiblity-toggle">
+                    visibility
+                </span>
+                <p id="password-error">Password Invalid</p>
             </section>
 
             <section class="form-birthday">
                 <label for="form-Birthday">Birthday *</label>
                 <input type="date" name="Birthday" id="form-Birthday">
+                <p id="age-error">Age Invalid</p>
             </section>
 
             <section class="form-checkbox">
                 <label for="Form-Checkbox">I accept the terms and privacy
                     <input type="checkbox" name="FormCheckbox" id="Form-Checkbox">
                     <span class="check"></span>
+                    <p id="check-error">You must accept the terms</p>
                 </label>
             </section>
 
@@ -57,5 +68,8 @@
 
         </form>
     </main>
+
+    <script src="js/eyepassword.js"></script>
+
 </body>
 </html>
