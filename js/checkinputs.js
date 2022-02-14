@@ -12,6 +12,8 @@ form.addEventListener("submit", (event)=>{
 
     if(checkName() == true && checkEmail() == true && checkPassword() == true && checkdate() == true && checkPhone() == true && checkTerms() == true){
         location.href = "../sucess.html";
+    }else{
+        form.reset();
     }
 
 })
