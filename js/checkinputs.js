@@ -11,7 +11,7 @@ form.addEventListener("submit", (event)=>{
     checkTerms();
 
     if(checkName() == true && checkEmail() == true && checkPassword() == true && checkdate() == true && checkPhone() == true && checkTerms() == true){
-        location.href = "../sucess.html";
+        location.href = "sucess.html";
     }else{
         form.reset();
     }
@@ -56,6 +56,9 @@ function checkPassword(){
     if(regexPassword.test(password.value) && password.value.length >= 6 && password.value.length < 9){
         passwordMessage.innerHTML = "";
         return true;
+    }else{
+        passwordMessage.innerHTML = "Password Invalid";
+        return false;
     }
 
 }
