@@ -56,9 +56,6 @@ function checkPassword(){
     if(regexPassword.test(password.value) && password.value.length >= 6 && password.value.length < 9){
         passwordMessage.innerHTML = "";
         return true;
-    }else{
-        passwordMessage.innerHTML = "Password Invalid";
-        return false;
     }
 
 }
