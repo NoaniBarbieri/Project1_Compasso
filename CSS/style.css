@@ -247,3 +247,9 @@ button{
     margin-top: 9px;
     font-size: 18px;
 }
+
+#form-Birthday::-webkit-datetime-edit-fields-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
