@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intern Sing Up</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Nunito&display=swap" rel="stylesheet">
@@ -13,49 +14,65 @@
 </head>
 <body>
     <main class="main-page">
-        <div>
+        <div class="header-page">
             <img  class="img" src="data.png"> 
             <h1>Intern Sing Up</h1>
         </div>
-
         <form class="form-all">
-            <section class="form-name">
-                <label for="form-FullName">Full Name *</label>
-                <input type="text" name="FullName" id="form-FullName" placeholder="Name" required>
-            </section>
+            <div class="forms">
+                <section class="form-name">
+                    <label for="form-FullName">Full Name *</label>
+                    <input type="text" name="FullName" id="form-FullName" placeholder="Name" >
+                    <div class="wrong-message" id="name-error"></div>
+                </section>
 
-            <section class="form-email">
-                <label for="form-Email">Email *</label>
-                <input type="email" name="Email" id="form-Email" placeholder="foo@bar.com" required>
-            </section>
+                <section class="form-email">
+                    <label for="form-Email">Email *</label>
+                    <input type="email" name="Email" id="form-Email" placeholder="foo@bar.com" >
+                    <div class="wrong-message" id="email-error"></div>
+                </section>
 
-            <section class="form-phone">
-                <label for="formPhone">Phone</label>
-                <input type="tel" name="Phone" id="formPhone" placeholder="(83) 00000-0000">
-            </section>
+                <section class="form-phone">
+                    <label for="formPhone">Phone</label>
+                    <input type="tel" name="Phone" id="formPhone" placeholder="(83) 00000-0000">
+                    <div class="wrong-message" id="phone-error"></div>
+                </section>
 
-            <section class="form-password">
-                <label for="form-Password">Password *</label>
-                <input type="password" name="Password" id="form-Password" required>
-            </section>
+                <section class="form-password">
+                    <label for="form-Password">Password *</label>
+                    
+                    <input type="password" name="Password" id="form-Password" >
+                    <span class="material-icons-outlined" id="visiblity-toggle">
+                        visibility
+                    </span>
+                    <div class="wrong-message" id="password-error"></div>
+                </section>
 
-            <section class="form-birthday">
-                <label for="form-Birthday">Birthday *</label>
-                <input type="date" name="Birthday" id="form-Birthday" placeholder="yyyy/mm/dd" required>
-            </section>
+                <section class="form-birthday">
+                    <label for="form-Birthday">Birthday *</label>
+                    <input type="date" name="Birthday" id="form-Birthday"> 
+                    <div class="wrong-message" id="age-error"></div>
+                </section>
 
-            <section class="form-checkbox">
-                <label for="Form-Checkbox">I accept the terms and privacy
-                    <input type="checkbox" name="FormCheckbox" id="Form-Checkbox" required>
-                    <span class="check"></span>
-                </label>
-            </section>
+                <div class="all">
+                    <section class="form-checkbox">
+                        <label for="Form-Checkbox">I accept the terms and privacy
+                            <input type="checkbox" name="FormCheckbox" id="Form-Checkbox">
+                            <span class="check"></span>
+                            <div class="wrong-message" id="check-error"></div>
+                        </label>
+                    </section>
 
-            <div class="button_register">
-                <button id="button_register" type="submit">Register</button>
+                    <div class="button_register">
+                        <button id="button_register" type="submit">Register</button>
+                    </div>
+                </div>
             </div>
-
         </form>
     </main>
+
+    <script src="js/eyepassword.js"></script>
+    <script src="js/checkinputs.js"></script>
+
 </body>
 </html>
