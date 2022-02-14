@@ -1,10 +1,10 @@
-const password = document.querySelector('#form-Password')
-const icon = document.querySelector('#visiblity-toggle')
+var password = document.querySelector('#form-Password')
+var icon = document.querySelector('#visiblity-toggle')
 
 icon.addEventListener('click', () => {
     if (password.type === "text") {
         password.type = "password";
-        icon.innerHTML = "visibility";
+        icon.innerHTML = "visibility"; 
     } else {
         password.type = "text";
         icon.innerHTML = "visibility_off";

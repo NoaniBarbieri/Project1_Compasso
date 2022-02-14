@@ -23,19 +23,19 @@
             <section class="form-name">
                 <label for="form-FullName">Full Name *</label>
                 <input type="text" name="FullName" id="form-FullName" placeholder="Name" >
-                <p id="name-error">FullName Invalid</p>
+                <div class="wrong-message" id="name-error"></div>
             </section>
 
             <section class="form-email">
                 <label for="form-Email">Email *</label>
                 <input type="email" name="Email" id="form-Email" placeholder="foo@bar.com" >
-                <p id="email-error">Email Invalid</p>
+                <div class="wrong-message" id="email-error"></div>
             </section>
 
             <section class="form-phone">
                 <label for="formPhone">Phone</label>
                 <input type="tel" name="Phone" id="formPhone" placeholder="(83) 00000-0000">
-                <p id="phone-error">Phone Invalid</p>
+                <div class="wrong-message" id="phone-error"></div>
             </section>
 
             <section class="form-password">
@@ -45,20 +45,20 @@
                 <span class="material-icons-outlined" id="visiblity-toggle">
                     visibility
                 </span>
-                <p id="password-error">Password Invalid</p>
+                <div class="wrong-message" id="password-error"></div>
             </section>
 
             <section class="form-birthday">
                 <label for="form-Birthday">Birthday *</label>
-                <input type="date" name="Birthday" id="form-Birthday">
-                <p id="age-error">Age Invalid</p>
+                <input type="date" name="Birthday" id="form-Birthday"> 
+                <div class="wrong-message" id="age-error"></div>
             </section>
 
             <section class="form-checkbox">
                 <label for="Form-Checkbox">I accept the terms and privacy
                     <input type="checkbox" name="FormCheckbox" id="Form-Checkbox">
                     <span class="check"></span>
-                    <p id="check-error">You must accept the terms</p>
+                    <div class="wrong-message" id="check-error"></div>
                 </label>
             </section>
 
@@ -70,6 +70,7 @@
     </main>
 
     <script src="js/eyepassword.js"></script>
+    <script src="js/checkinputs.js"></script>
 
 </body>
 </html>

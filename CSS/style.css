@@ -233,7 +233,7 @@ button{
     cursor: pointer; /*trocar pela mãozinha*/
 }
 
-p{
+.wrong-message{
     margin-left: 5px;
     margin-top: 10px;
     font-family: Nunito;
@@ -252,4 +252,10 @@ p{
     margin-left:-30px;
     margin-top: 9px;
     font-size: 18px;
+}
+
+#form-Birthday::-webkit-datetime-edit-fields-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
